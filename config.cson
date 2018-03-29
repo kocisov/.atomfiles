@@ -1,0 +1,41 @@
+"*":
+  "atom-ide-ui":
+    hyperclick:
+      win32TriggerKeys: "shiftKey,ctrlKey"
+    use: {}
+  core:
+    autoHideMenuBar: true
+    disabledPackages: [
+      "linter"
+      "atom-typescript"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "pristine-ui"
+      "run-time-syntax"
+    ]
+    uriHandlerRegistration: "always"
+  editor: {}
+  "linter-ui-default":
+    panelHeight: 419
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      arrowParens: "always"
+      semi: false
+      singleQuote: true
+      trailingComma: "es5"
+  "pristine-ui": {}
+  "seti-icons": {}
+  "seti-ui":
+    compactView: true
+    hideProjectTab: true
+  welcome:
+    showOnStartup: false

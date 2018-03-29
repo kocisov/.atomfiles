@@ -1,0 +1,21 @@
+{
+  "name": "atomfiles",
+  "version": "0.0.1",
+  "description": "Atom files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "install": "apm install --packages-file ./packages.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kocisov/atomfiles.git"
+  },
+  "keywords": ["Atom", "Files"],
+  "author": "kocisov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kocisov/atomfiles/issues"
+  },
+  "homepage": "https://github.com/kocisov/atomfiles#readme"
+}
