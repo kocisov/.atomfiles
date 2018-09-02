@@ -1,23 +1,36 @@
 "*":
   "atom-ide-ui":
     hyperclick:
-      win32TriggerKeys: "shiftKey,ctrlKey"
+      darwinTriggerKeys: "shiftKey,ctrlKey"
     use: {}
   core:
-    autoHideMenuBar: true
     disabledPackages: [
       "linter"
-      "atom-typescript"
+    ]
+    packagesWithKeymapsDisabled: [
+      "duplicate-line-or-selection"
+      "autocomplete"
     ]
     telemetryConsent: "no"
     themes: [
       "pristine-ui"
-      "run-time-syntax"
+      "atom-ide-dark-syntax"
     ]
-    uriHandlerRegistration: "always"
-  editor: {}
+  "cursor-blink-interval":
+    cursorBlinkInterval: 1200
+  "duotone-dark-syntax":
+    color:
+      duo: "#ffcb9e"
+      uno: "#958bf7"
+  editor:
+    fontFamily: "Monaco, Fira Code, Consolas, Menlo, monospace"
+    fontSize: 19
+  "exception-reporting":
+    userId: "667fe6e7-9438-4473-a2ed-237448129929"
+  "flow-ide":
+    showUncovered: true
   "linter-ui-default":
-    panelHeight: 419
+    panelHeight: 310
   minimap:
     plugins:
       "highlight-selected": true
@@ -31,11 +44,16 @@
       arrowParens: "always"
       semi: false
       singleQuote: true
-      trailingComma: "es5"
-  "pristine-ui": {}
-  "seti-icons": {}
-  "seti-ui":
-    compactView: true
-    hideProjectTab: true
+      trailingComma: "all"
+  "status-bar":
+    isVisible: false
+  "tone-syntax":
+    color:
+      duo: "#ffcaa2"
+      syncUI: false
+      tri: "#edebfe"
+      uno: "#ffcb9e"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false

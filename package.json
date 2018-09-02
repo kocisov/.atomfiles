@@ -1,6 +1,6 @@
 {
   "name": "atomfiles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Atom files",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/kocisov/atomfiles.git"
   },
-  "keywords": ["Atom", "Files"],
+  "keywords": [
+    "Atom",
+    "Files"
+  ],
   "author": "kocisov",
   "license": "MIT",
   "bugs": {

@@ -1,58 +1,97 @@
-.platform-win32 atom-workspace .tab-bar .tab .title::before {
-  margin-top: 8px;
-  font-size: 20px;
+// Font smoothing and boldness
+atom-text-editor,
+atom-panel,
+atom-panel.modal atom-text-editor[mini],
+.primary-line {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
 }
 
+// Make "Project" title invisible
 atom-dock.left .tab-bar {
   display: none;
 }
 
-.icon::before {
-  animation: colorChanger 5s infinite linear;
+// Smooth Block cursor
+atom-text-editor .cursor {
+  border-width: 13px;
+  transition: opacity 0.8s linear;
 }
 
-@keyframes colorChanger {
-  0% {
-    color: #fff;
+// If Theme is without ScrollBar styles, have this fine looking ScrollBar instead
+::-webkit-scrollbar {
+  background-color: #262626;
+  height: 9px;
+  width: 9px;
+
+  &-thumb {
+    background-color: #404040;
+    border-radius: 25px;
+    border: 2px solid #262626;
+
+    &:window-inactive {
+      background-color: rgb(116, 115, 105);
+    }
   }
 
-  10% {
-    color: #c92a2a;
-  }
-
-  20% {
-    color: #f76707;
-  }
-
-  30% {
-    color: #a61e4d;
-  }
-
-  40% {
-    color: #862e9c;
-  }
-
-  50% {
-    color: #364fc7;
-  }
-
-  60% {
-    color: #1862ab;
-  }
-
-  70% {
-    color: #0b7285;
-  }
-
-  80% {
-    color: #2b8a3e;
-  }
-
-  90% {
-    color: #fab005;
-  }
-
-  100% {
-    color: #fff;
+  &-corner {
+    background-color: #262626;
   }
 }
+
+// Fix Icon = Title alignment
+.tab-bar .tab .title.title:before {
+  margin-top: 5px;
+  // font-size: 20px;
+}
+
+// Aesthetic Icon Color changing
+// .icon::before {
+//   animation: colorChanger 5s infinite linear;
+// }
+//
+// @keyframes colorChanger {
+//   0% {
+//     color: #fff;
+//   }
+//
+//   10% {
+//     color: #c92a2a;
+//   }
+//
+//   20% {
+//     color: #f76707;
+//   }
+//
+//   30% {
+//     color: #a61e4d;
+//   }
+//
+//   40% {
+//     color: #862e9c;
+//   }
+//
+//   50% {
+//     color: #364fc7;
+//   }
+//
+//   60% {
+//     color: #1862ab;
+//   }
+//
+//   70% {
+//     color: #0b7285;
+//   }
+//
+//   80% {
+//     color: #2b8a3e;
+//   }
+//
+//   90% {
+//     color: #fab005;
+//   }
+//
+//   100% {
+//     color: #fff;
+//   }
+// }
